@@ -319,6 +319,10 @@ public class codingBat {
         return(count>=1 && count<=3);
     }
 
+    public static boolean lastDigit(int a, int b){
+        return a % 10 == b % 10;
+    }
+
     public static int divide(int a,int b){
         return a / b;
     }
