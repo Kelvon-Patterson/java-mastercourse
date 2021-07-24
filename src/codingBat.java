@@ -333,6 +333,15 @@ public class codingBat {
 
     }
 
+    public static String everyNth(String str, int n){
+        StringBuilder result = new StringBuilder();
+
+        for (int i=0; i<str.length(); i = i + n) {
+            result.append(str.charAt(i));
+        }
+        return result.toString();
+    }
+
     public static int divide(int a,int b){
         return a / b;
     }
