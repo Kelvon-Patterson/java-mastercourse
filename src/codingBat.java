@@ -323,11 +323,21 @@ public class codingBat {
         return a % 10 == b % 10;
     }
 
+    public static String endUp(String str){
+
+        if(str.length() <=3 ) return str.toUpperCase();
+
+        String allButLastThree= str.substring(0,str.length()-3);
+        String lastThree = str.substring(str.length()-3);
+            return allButLastThree+lastThree.toUpperCase();
+
+    }
+
     public static int divide(int a,int b){
         return a / b;
     }
     public static void main(String[] args) {
-
+        System.out.println("endUp(\"This\") = " + endUp("This"));
         System.out.println("sumDouble() = " + sumDouble(9,9));
         System.out.println("diff21() = " + diff21(100));
         System.out.println("parrotTrouble(true,7) = " + parrotTrouble(true, 7));
